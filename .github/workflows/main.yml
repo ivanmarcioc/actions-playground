@@ -1,0 +1,13 @@
+name: "Exibir Data"
+
+on:
+  push:
+  
+jobs:
+  print_data_ubuntu:
+  name: data_ubuntu
+  runs-on: ubuntu-latest
+  
+  steps:
+    - name: data_ubuntu
+      run: date
