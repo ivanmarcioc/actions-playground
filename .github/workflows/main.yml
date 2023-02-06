@@ -1,13 +1,42 @@
-name: "Exibir Data"
+name: "Exercicio 1 - Ivan"
 
 on:
-  push:
+	push:
   
-jobs:
-  print_data_ubuntu:
-  name: data_ubuntu
-  runs-on: ubuntu-latest
-  
-  steps:
-    - name: data_ubuntu
-      run: date
+	jobs:
+	print_date_ubuntu:
+		name: print date ubuntu!
+		runs-on: ubuntu-latest
+
+		steps:
+		- name: print date ubuntu!
+		  run: date
+        
+	print_date_windows:
+		name: print date windows!
+		runs-on: windows-latest
+
+		steps:
+		- name: print date windows!
+		  run: date
+        
+	print_date_macos:
+		name: print date MacOS!
+		runs-on: macos-latest
+
+		steps:
+		- name: print date macos!
+		  run: date	
+
+	print_date_final:
+		name: print date final!
+		runs-on: ubuntu-latest
+	
+		needs:
+		- print_date_ubuntu
+		- print_date_windows
+		- print_date_macos
+   
+		steps:
+		- name: print date final!
+          run: date
