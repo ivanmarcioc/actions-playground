@@ -1,7 +1,7 @@
 name: "Exercicio 1 - Ivan"
 
 on:
-	push:
+push:
 
 	jobs:
 	print_date_ubuntu:
