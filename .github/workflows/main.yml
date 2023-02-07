@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu- latest
 
     steps:
-    name: Print Date Ubuntu!
-    run: date
+  name: Print Date Ubuntu!
+  run: date
     
   print_date_windows:
       name: Print date Windows!
