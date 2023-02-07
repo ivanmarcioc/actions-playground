@@ -5,15 +5,15 @@ on:
     
 jobs:
   print_date_ubuntut:
-    name: Print Date Ubuntu! 
+    name: Print Date Ubuntu!
     runs-on: ubuntu- latest
 
     steps:
-    name: Print Date Ubuntu! 
+    name: Print Date Ubuntu!
     run: date
     
   print_date_windows:
-      name: Print date Windows! 
+      name: Print date Windows!
       runs-on: windows-latest
 
   steps:
@@ -21,8 +21,8 @@ jobs:
       run: date
 
   print_date_macos:
-      name: Print Date MacOs! 
-      runs-on: macos-latest 
+      name: Print Date MacOs!
+      runs-on: macos-latest
 
   steps:
      - name: Print date MacOs!
